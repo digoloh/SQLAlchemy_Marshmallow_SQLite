@@ -1,0 +1,14 @@
+#Test route
+curl --request GET http://127.0.0.1:5000
+
+curl --request GET http://127.0.0.1:5000/users/get-all-users
+
+curl --request POST http://127.0.0.1:5000/users/add-users-json \
+--header "Content-Type: application/json" \
+--data
+'{
+ "user_id" : "700125",
+ "user_forename" : "Francis",
+ "user_surname" : "Morrissey",
+ "user_email" : "fm10@Bolton.ac.uk"
+}'
